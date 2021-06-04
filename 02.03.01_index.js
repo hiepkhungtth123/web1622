@@ -4,42 +4,40 @@
 // Mở thư viện fs, express
 // const fs = require("fs");
 const express = require("express");
+var path = require('path');
 // Tham số - Web lắng nghe tại xport
 xport = process.env.PORT || 3000;
 // Tạo App Web
 const app = express();
 const router = express.Router();
 // Routing WEB
+// MVC
 
 //--- Home
-router.get('/home',
+router.get('/',
     (req, res) => {
-        res.setHeader('Content-Type', 'text/html; charset=utf-8');
-        res.send("Đây là trang Home !");
+        res.sendFile(__dirname + "/view/home.html");
     }
 );
 
 //--- Profile
 router.get('/profile',
     (req, res) => {
-        res.setHeader('Content-Type', 'text/html; charset=utf-8');
-        res.send("Đây là trang Profile !");
+        res.sendFile(__dirname + "/view/profile.html");
     }
 );
 
 //--- Login
 router.get('/login',
     (req, res) => {
-        res.setHeader('Content-Type', 'text/html; charset=utf-8');
-        res.send("Đây là trang Login !");
+        res.sendFile(__dirname + "/view/login.html");
     }
 );
 
 //--- Logout
 router.get('/logout',
     (req, res) => {
-        res.setHeader('Content-Type', 'text/html; charset=utf-8');
-        res.send("Đây là trang Logout !");
+        res.sendFile(__dirname + "/view/logout.html");
     }
 );
 
