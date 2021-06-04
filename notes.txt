@@ -1,0 +1,17 @@
+
+B1. Project
+    1. File / Project Nodejs :  02.03.01_index.js
+    2. File config của project:  package.json
+    3. File config Heroku - running Web:  Procfile
+
+    
+B2. Github
+    - Tạo Repositories <A>
+    - Upload Project (B1)
+
+B3. cấu hình Heroku 
+    - Tạo Web App - <A Hereku>
+    - Kết nối vào tài khoản GitHub 
+    - Cấu hình tới Repositories <A>
+    - Deploy Project (B1) - <A>
+    - View kết quả
